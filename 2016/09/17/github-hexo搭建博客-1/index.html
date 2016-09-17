@@ -104,7 +104,7 @@
 <meta property="og:description" content="刚利用github+hexo搭建了这个博客，所以趁热打铁记录一下，开始我的第一篇博客（然而各种渣，并不知道怎么写，边写边学，见谅～）看网上各位大神介绍的太简短了，对于我这种技术渣真是废了好大劲，所以写下我的安装配置过程。由于我是在Ubuntu下搭建的，这里只介绍Ubuntu下。windows下方式差不多，区别就在于下载安装方式及node.js的环境变量的配置。下面开始准备搭建博客。">
 <meta property="og:image" content="http://yoursite.com/home/chenchen/%E5%9B%BE%E7%89%87/2016-09-15%2015-50-11%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">
 <meta property="og:image" content="http://yoursite.com/dfgh">
-<meta property="og:updated_time" content="2016-09-17T12:01:47.816Z">
+<meta property="og:updated_time" content="2016-09-17T14:27:44.323Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo搭建博客">
 <meta name="twitter:description" content="刚利用github+hexo搭建了这个博客，所以趁热打铁记录一下，开始我的第一篇博客（然而各种渣，并不知道怎么写，边写边学，见谅～）看网上各位大神介绍的太简短了，对于我这种技术渣真是废了好大劲，所以写下我的安装配置过程。由于我是在Ubuntu下搭建的，这里只介绍Ubuntu下。windows下方式差不多，区别就在于下载安装方式及node.js的环境变量的配置。下面开始准备搭建博客。">
@@ -116,7 +116,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post"},
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -152,7 +152,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right page-post-detail ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -351,7 +351,7 @@
 <blockquote>
 <p>npm install hexo-server –save</p>
 </blockquote>
-<p>如果出现什么问题，无法打开，提示不是running at <a href="http://Localhost：4000/，输入hexo" target="_blank" rel="external">http://Localhost：4000/，输入hexo</a> server –debug看看是不是端口号已被占用，hexo s -p &lt;新的端口号&gt;来修改端口号。再在浏览器输入即可。<br><strong>PS</strong>:这个过程需要<strong>翻墙</strong>，不翻墙可能打不开页面。某天突然坏了，然后localhost:4000页面一直不出来，更改端口号也不行，最后才知道是自己翻墙出了问题，下面有介绍不需要翻墙的。</p>
+<p>如果出现什么问题，无法打开，提示不是running at <a href="http://Localhost：4000/，输入hexo" target="_blank" rel="external">http://Localhost：4000/，输入hexo</a> server –debug看看是不是端口号已被占用，hexo s -p &lt;新的端口号&gt;来修改端口号。再在浏览器输入即可。</p>
 <h3 id="4-部署到github"><a href="#4-部署到github" class="headerlink" title="4.部署到github"></a><strong>4.部署到github</strong></h3><h4 id="4-1-创建github帐号"><a href="#4-1-创建github帐号" class="headerlink" title="4.1 创建github帐号"></a>4.1 创建github帐号</h4><p>访问地址<a href="https://github.com/" target="_blank" rel="external">github官网</a>，sign up 输入邮箱，用户名，密码，进入之后，点击右上方+号，点击<code>New repository</code>创建新的仓库，然后填写Repository name <strong>注意这个名字要和你的用户名相同，然后命名格式&lt;用户名&gt;.github.com</strong></p>
 <h4 id="4-2-配置hexo，将hexo与github关联"><a href="#4-2-配置hexo，将hexo与github关联" class="headerlink" title="4.2 配置hexo，将hexo与github关联"></a>4.2 配置hexo，将hexo与github关联</h4><p>刚才Hexo文件夹下有一个_config.yml，这是hexo的全局配置文件，包含很多配置内容，即是在这里修改来关联github<br>打开_config.yml，在文件最后可以看到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo:  https://github.com/AndyFlyTo/AndyFlyTo.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
 <p>按照我写的，第二项换成自己的帐号名，即关联了自己的github。</p>
