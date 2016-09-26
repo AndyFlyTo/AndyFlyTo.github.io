@@ -93,7 +93,7 @@
 <meta property="og:description" content="刚利用github+hexo搭建了这个博客，所以趁热打铁记录一下，开始我的第一篇博客（然而各种渣，并不知道怎么写，边写边学，见谅～）看网上各位大神介绍的太简短了，对于我这种技术渣真是废了好大劲，所以写下我的安装配置过程。由于我是在Ubuntu下搭建的，这里只介绍Ubuntu下。下面开始准备搭建博客。">
 <meta property="og:image" content="http://yoursite.com/home/chenchen/%E5%9B%BE%E7%89%87/2016-09-15%2015-50-11%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">
 <meta property="og:image" content="http://yoursite.com/dfgh">
-<meta property="og:updated_time" content="2016-09-26T12:26:16.338Z">
+<meta property="og:updated_time" content="2016-09-26T13:16:02.379Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo搭建博客">
 <meta name="twitter:description" content="刚利用github+hexo搭建了这个博客，所以趁热打铁记录一下，开始我的第一篇博客（然而各种渣，并不知道怎么写，边写边学，见谅～）看网上各位大神介绍的太简短了，对于我这种技术渣真是废了好大劲，所以写下我的安装配置过程。由于我是在Ubuntu下搭建的，这里只介绍Ubuntu下。下面开始准备搭建博客。">
@@ -349,7 +349,7 @@
 <li>每一项冒号后有一个空格 </li>
 <li>此时暂时用<code>https</code>协议的仓库地址来写，且后面还有.git</li>
 </ul>
-<p>hexo3.0以后deployer-git与hexo是分开的，所以要去下载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo npm install hexo-deployer-git --save (下载安装deloyer-git)</div><div class="line">hexo deploy （部署）</div></pre></td></tr></table></figure></p>
+<p>hexo3.0以后deployer-git与hexo是分开的，所以要去下载。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo npm install hexo-deployer-git --save (下载安装deloyer-git)</div><div class="line">hexo deploy （部署）</div></pre></td></tr></table></figure></p>
 <p>至此简单的部署已经完成<br>现在已经可以输入<code>http://&lt;your_name&gt;.github.io</code>看到你的博客了。</p>
 <h4 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h4><p>可以去你放置hexo的各种文件的目录下，可以看到很多文件，其中source文件夹_posts存放的是你的博客，所以cd到当前文件位置输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;title&quot; </div><div class="line">INFO  Created: ~/blog/source/_posts/title.md</div></pre></td></tr></table></figure></p>
 <p>hexo new “title”在当前目录下创建一个title.md，然后就可以打开编辑了。编辑完成后可以使用hexo server查看预览。如果要上传服务器，输入以下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo c                           清除缓存hexo clean</div><div class="line">hexo g                           生成静态网页 generate</div><div class="line">hexo d                           部署到服务器 deploy</div></pre></td></tr></table></figure></p>
